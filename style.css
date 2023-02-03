@@ -1,0 +1,148 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes button_facebook {
+  0% {
+    background-color: rgb(110, 13, 47);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+  50% {
+    background-color: rgb(183, 160, 46);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+}
+@keyframes button_twitter {
+  0% {
+    background-color: aqua;
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+  50% {
+    background-color: rgb(221, 100, 225);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+}
+@keyframes button_website {
+  0% {
+    background-color: rgb(205, 213, 47);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+  50% {
+    background-color: rgb(40, 61, 194);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+}
+@keyframes button_insta {
+  0% {
+    background-color: rgb(213, 130, 47);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+  50% {
+    background-color: rgb(46, 213, 222);
+    box-shadow: 6px 6px 0 darkgrey;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 80% 0%;
+  }
+  50% {
+    background-position: 20% 100%;
+  }
+  100% {
+    background-position: 80% 0%;
+  }
+}
+body {
+  height: 300px;
+  width: 100%;
+  background: linear-gradient(
+    149deg,
+    rgba(24, 187, 156, 1) 0%,
+    rgba(106, 57, 175, 1) 42%,
+    rgba(187, 24, 148, 1) 72%,
+    rgba(115, 53, 134, 1) 100%
+  );
+  animation: gradient 10s infinite linear;
+  background-size: 400%;
+}
+.image {
+  margin-top: 300px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 0 darkgrey;
+}
+.image:hover {
+  animation: spin 5s linear 0s infinite;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/* FACEBOK--------------- */
+.facebook {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+}
+.facebook:hover {
+  border-radius: 30%;
+  background-color: green;
+  animation-name: button_facebook;
+  animation-duration: 5s;
+  width: 325px;
+  height: 125px;
+}
+/* TWITTER----------------- */
+.twitter {
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  background-color: white;
+}
+.twitter:hover {
+  border-radius: 30px;
+  background-color: green;
+  animation-name: button_twitter;
+  animation-duration: 5s;
+  width: 325px;
+  height: 125px;
+}
+/* WEBSITE------------------------ */
+.website {
+  width: 300px;
+  height: 100px;
+  margin-top: 100px;
+  background-color: white;
+}
+.website:hover {
+  border-radius: 30px;
+  background-color: green;
+  animation-name: button_website;
+  animation-duration: 5s;
+  width: 250px;
+  height: 125px;
+}
+/* INSTAGRAMM-------------------------- */
+.insta {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+}
+.insta:hover {
+  border-radius: 50%;
+  background-color: green;
+  animation-name: button_insta;
+  animation-duration: 5s;
+  width: 225px;
+  height: 125px;
+}
